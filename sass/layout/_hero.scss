@@ -1,0 +1,40 @@
+.main-title {
+  box-sizing: border-box;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: var(--footer-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+}
+
+.main-title__text {
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include font($fw:900, $fs:44px, $lh:1.36, $ls:0.036em );
+  color: var(--header-text-color);
+  text-transform: uppercase;
+}
+
+.main-title__button {
+  display: block;
+  border: 1px solid var(--acent-text-colo);
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--acent-text-color);
+  color: var(--header-text-color);
+
+  @include font($fw:700, $fs:16px, $lh:1.2, $ls:0.06em );
+  cursor: pointer;
+}

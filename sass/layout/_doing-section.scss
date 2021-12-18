@@ -1,0 +1,36 @@
+.card__doing {
+  display: flex;
+}
+
+.card__aside {
+  display: block;
+  position: relative;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+  }
+}
+
+.card__figure::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+
+.card__text{
+  @include font( $ls:0.03em ); 
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 27px;
+  left: 83px;
+}
+

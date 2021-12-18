@@ -1,0 +1,15 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --acent-text-color: #2196f3;
+  --header-text-color: #ffffff;
+  --logo-text-color: #000000;
+  --footer-background: #2f303a;
+  --background-bootun: #f5f4fa;
+  --footer-nav-text: 255, 255, 255;
+  --button-border: #ececec;
+  --section-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --timing-funcshion: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*# sourceMappingURL=variables.css.map */

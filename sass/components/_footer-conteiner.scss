@@ -1,0 +1,29 @@
+
+.section{
+  &.footer__section {
+    background-color: var(--footer-background);
+    padding: 60px 0;
+    text-align: center;
+  }
+}
+
+.container{
+  &.footer__conteiner {
+    // display: flex;
+  }
+}
+
+.footer__wrapper {
+  // margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+
+  @include font($fw:700, $fs:26px, $lh:1.2, $ls:0.03em );
+ 
+}

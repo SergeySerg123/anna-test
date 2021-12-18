@@ -1,0 +1,37 @@
+.border {
+  border-bottom: 1px solid #ececec;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 54px;
+  justify-content: center;
+  text-align: center;
+}
+
+.button__text {
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  border-style: none;
+  background-color: var(--background-bootun);
+  color: var(--primary-text-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include font($fs:16px,$lh:1.6, $ls:0.03em );
+
+  transition: color 250ms var(--timing-funcshion), background-color 250ms var(--timing-funcshion);
+
+  &:hover,
+  &:focus {
+  background-color: var(--acent-text-color);
+  color: var(--header-text-color);
+  cursor: pointer;
+  }
+}
+
+.button__wrapper:not(:last-child) {
+  margin-right: 8px;
+}
+

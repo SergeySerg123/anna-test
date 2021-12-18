@@ -1,0 +1,25 @@
+.logo {
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 94px;   
+  }
+  color: var(--logo-text-color);
+  font-family: 'Raleway', sans-serif;
+  @include font($fw:700, $fs:26px, $lh:1.2, $ls:0.03em );
+
+  &.logo__footer {
+  display: block;
+  margin-bottom: 20px;
+  } 
+}
+
+.logo__web {
+  color: var(--acent-text-color);
+}
+
+.logo__studio {
+  color: var(--background-bootun);
+}

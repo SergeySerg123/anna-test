@@ -1,0 +1,139 @@
+.header{
+   @media screen and (max-width: 767px ) {
+     padding: 16px 0px;
+  }
+  
+}
+
+.header__container {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+     justify-content: flex-start;
+  }
+}
+
+
+.main-nav {
+  // display: flex;
+  // align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  // display: flex;
+  
+  &.main-nav__link.current {
+  color: var(--acent-text-color);
+  }
+}
+
+.header-button__close{
+ @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  
+}
+
+.main-nav__item {
+  display: inline-block;
+  position: relative;
+
+  &:not(:last-child) {
+  margin-right: 50px;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  
+  @include font();
+
+  transition: color 250ms var(--timing-funcshion);
+
+  &:hover,
+  &:focus {
+  color: var(--acent-text-color);
+  }
+}
+
+.decoration.current {
+  color: var(--acent-text-color);
+}
+
+.main-nav__auht-list {
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
+ display: none;
+//   & .main-nav__auht-item + .main-nav__auht-item {
+//   margin-left: 50px;
+//  }
+
+@media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+ @media screen and (min-width: 1200px) {
+     display: flex;   
+  }
+
+}
+
+ .main-nav__auht-link{
+  display: flex;
+   @media screen and (min-width: 1200px) {
+   padding-top: 32px;
+   padding-bottom: 32px;
+  }
+  
+  align-items: center;
+
+  color: var(--secondary-text-color);
+
+  @include font();
+
+  transition: color 250ms var(--timing-funcshion);
+
+   &:hover,
+   &:focus {
+  color: var(--acent-text-color);
+  }
+}
+
+.main-nav__auht-item{
+  @media screen and (min-width: 768px) {
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+
+    @media screen and (min-width: 1200px) {
+    &:not(:last-child){
+      margin-bottom: 0px;
+      margin-right: 30px;
+    }
+  }
+}
+.main-nav__auht-icon {
+  // display: flex;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+
+
+

@@ -1,0 +1,134 @@
+.form{
+  text-align: left;
+  margin: 0px;
+}
+
+.form__titel{
+  @include font($fw:700, $fs:20px, $lh:1.2, $ls:0.03em );
+  text-align: center;
+  color:var(--primary-text-color);
+}
+
+.input-group{
+  display: block;
+  position: relative; 
+  margin-top: 10px;
+}
+
+.input-group__label{
+display: block;
+margin-top: 10px;
+
+@include font($fs:12px, $ls:0.01em );
+color: var(--secondary-text-color);
+}
+
+.input-group__input{
+  padding-left: 40px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-right: 15px;
+  color: rgba(117, 117, 117, 1);
+
+  transition: border 250ms var(--timing-funcshion);
+  
+  &:focus ~ .input-group__svg{
+  fill: #2196F3;
+  }
+  &:focus{
+  border: 1px solid var(--acent-text-color);
+  outline: none;
+  }
+}
+
+.input-group__svg{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 11px;
+
+  transition: fill 250ms var(--timing-funcshion);
+}
+
+.input-group__help{
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(117, 117, 117, 1);
+ 
+  transition: border 250ms var(--timing-funcshion);
+
+  &::placeholder{
+  @include font($fs:12px,$ls:0.01em );
+  color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus{
+  border: 1px solid var(--acent-text-color);
+  outline: none;
+  }
+}
+
+.checkbox-group{
+  display: block;
+  position: relative; 
+  margin-top: 10px;
+  text-align: center;
+}
+
+.checkbox-group__label a{ 
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.checkbox-group__imput:checked + .checkbox-group__svg{
+  border: var(--acent-text-color);
+  background-color: var(--acent-text-color);
+  background-image: url(../images/checkt.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: padding-box;
+
+  &:focus + .checkbox-group__svg{
+  border-color: var(--acent-text-color);
+  }
+}
+
+.checkbox-group__svg{
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  display: block;
+}
+
+.checkbox-group__text{
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+
+.form__button{
+  background: var(--acent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: var(--acent-text-color);
+  color: var(--header-text-color);
+  display: block; 
+  margin:0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 16px 55px;
+}

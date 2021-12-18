@@ -1,0 +1,11 @@
+.title {
+  @include font($fw:700, $fs:36px, $lh:1.16, $ls:0.03em );
+  text-align: center;
+  
+}
+
+.our-card__title,
+.our-comand__title,
+.our-work__title{
+  margin-bottom: 50px; 
+}
