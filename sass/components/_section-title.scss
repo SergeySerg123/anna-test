@@ -2,10 +2,17 @@
   @include font($fw:700, $fs:36px, $lh:1.16, $ls:0.03em );
   text-align: center;
   
+   @media screen and (max-width: 1199px){
+     @include font($fw:700, $fs:28px, $lh:1.17, $ls:0.03em );
+   }
 }
 
 .our-card__title,
 .our-comand__title,
 .our-work__title{
   margin-bottom: 50px; 
+
+   @media screen and (max-width: 1199px){
+     margin-bottom: 30px;
+   }
 }
