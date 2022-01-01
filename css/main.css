@@ -561,27 +561,84 @@ address {
 
 .main-title {
   box-sizing: border-box;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
   margin: 0 auto;
   background-color: var(--footer-background);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main-title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-desktop2x.jpg);
+  }
 }
 
 .main-title__text {
-  width: 696px;
+  max-width: 360px;
+  height: auto;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.036em;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
   color: var(--header-text-color);
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title__text {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .main-title__button {
