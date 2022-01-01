@@ -179,38 +179,92 @@
       </div>
     </section>
     <!-- Блок Чем мы занимаемся -->
-    <!-- <section class="section">
+    <section class="section section__doing">
       <div class="container">
         <h2 class="title our-work__title ">Чем мы занимаемся</h2>
         <ul class="card__doing">
           <li class="card__aside">
             <div class="card__figure">
-              <img src="./images/box_1.jpg" alt="пример работы" width="370" class="img" />
+              <picture>
+                <source srcset="./images/occupation/occ-1-desktop.jpg 1x,
+                                ./images/occupation/occ-1-desktop@2x.jpg  2x"
+                       media="(min-width: 1200px)">
+              
+                <source srcset="./images/occupation/occ-2-desktop.jpg 1x,
+                               ./images/occupation/occ-2-desktop@2x.jpg  2x"
+                       media="(min-width: 768px)">
+              
+                <source srcset="./images/occupation/occ-3-desktop.jpg 1x,
+                              ./images/occupation/occ-3-desktop@2x.jpg 2x" 
+                        media="(min-width: 320px)">
+              
+                <img src="./images/occupation/occ-1-desktop.jpg" alt="пример работы" width="370" class="img" />
+              
+              </picture>
+             
             </div>
             <p class="card__text">Десктопные приложения</p>
           </li>
           <li class="card__aside">
             <div class="card__figure">
-              <img src="./images/box_2.jpg" alt="пример работы" width="370" class="img" />
+              <picture>
+                <source srcset="./images/occupation/occ-2-desktop.jpg 1x,
+                                ./images/occupation/occ-2-desktop@2x.jpg  2x"
+                                 media="(min-width: 1200px)">
+              
+                <source srcset="./images/occupation/occ-3-desktop.jpg 1x,
+                                            ./images/occupation/occ-3-desktop@2x.jpg 2x" media="(min-width: 320px)">
+              
+                <img src="./images/occupation/occ-2-desktop.jpg" alt="пример работы" width="370" class="img" />
+              
+              </picture>
+              
             </div>
             <p class="card__text">Мобильные приложения</p>
           </li>
           <li class="card__aside">
             <div class="card__figure">
-              <img src="./images/box_3.jpg" alt="пример работы" width="370" class="img" />
+                <picture>
+                  <source srcset="./images/occupation/occ-3-desktop.jpg 1x,
+                                  ./images/occupation/occ-3-desktop@2x.jpg 2x" 
+                          media="(min-width: 1200px)">
+                
+                  <img src="./images/occupation/occ-3-desktop.jpg" alt="пример работы" width="370" class="img" />
+                
+                </picture>
+             
             </div>
             <p class="card__text">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- Наша команда -->
     <section class="section color__section">
       <div class="container">
         <h2 class="title our-comand__title">Наша команда</h2>
         <ul class="card__body-comand">
           <li class="card__title">
-            <img src="./images/product_designer.jpg" alt="дизайнер" width="270" height="260" class="img" />
+            <picture>
+               <source
+              srcset="./images/team/team-1-desktop.jpg 1x,
+              ./images/team/team-1-desktop@2x.jpg  2x"
+              media="(min-width: 1200px)">
+
+               <source
+              srcset="./images/team/team-1-tablet.jpg 1x,
+              ./images/team/team-1-tablet@2x.jpg  2x"
+              media="(min-width: 768px)">
+
+              <source
+              srcset="./images/team/team-1.jpg 1x,
+              ./images/team/team-1@2x.jpg 2x"
+              media="(min-width: 320px)">
+
+              <img src="./images/team/team-1.jpg" alt="дизайнер" width="270" height="260" class="img" />
+
+            </picture>
+           
             <div class="card__subtitle">
               <h3 class="card__subtitle-name">Игорь Демьяненко</h3>
               <p lang="en" class="card__subtitle-text">Product Designer</p>
@@ -246,7 +300,23 @@
             </div>
           </li>
           <li class="card__title">
-            <img src="./images/frontend_developer.jpg" alt="разрабочик" width="270" height="260" class="img" />
+            <picture>
+              <source srcset="./images/team/team-2-desktop.jpg 1x,
+                          ./images/team/team-2-desktop@2x.jpg  2x" 
+                          media="(min-width: 1200px)">
+            
+              <source srcset="./images/team/team-2-tablet.jpg 1x,
+                          ./images/team/team-2-tablet@2x.jpg  2x" 
+                          media="(min-width: 768px)">
+            
+              <source srcset="./images/team/team-2.jpg 1x,
+                          ./images/team/team-2@2x.jpg 2x" 
+                          media="(min-width: 320px)">
+            
+              <img src="./images/team/team-2.jpg" alt="разрабочик" width="270" height="260" class="img" />
+            
+            </picture>
+            
             <div class="card__subtitle">
               <h3 class="card__subtitle-name">Ольга Репина</h3>
               <p lang="en" class="card__subtitle-text">Frontend Developer</p>
@@ -283,7 +353,23 @@
             </div>
           </li>
           <li class="card__title">
-            <img src="./images/marketing.jpg" alt="маркетолог" width="270" height="260" class="img" />
+            <picture>
+              <source srcset="./images/team/team-3-desktop.jpg 1x,
+                              ./images/team/team-3-desktop@2x.jpg  2x"
+                      media="(min-width: 1200px)">
+            
+              <source srcset="./images/team/team-3-tablet.jpg 1x,
+                              ./images/team/team-3-tablet@2x.jpg  2x"
+                     media="(min-width: 768px)">
+            
+              <source srcset="./images/team/team-3.jpg 1x,
+                              ./images/team/team-3@2x.jpg 2x" 
+                     media="(min-width: 320px)">
+            
+              <img src="./images/team/team-3.jpg" alt="маркетолог" width="270" height="260" class="img" />
+            
+            </picture>
+            
             <div class="card__subtitle">
               <h3 class="card__subtitle-name">Николай Тарасов</h3>
               <p lang="en" class="card__subtitle-text">Marketing</p>
@@ -320,7 +406,23 @@
             </div>
           </li>
           <li class="card__title">
-            <img src="./images/ul_designer.jpg" alt="дизайнер" width="270" height="260" class="img" />
+            <picture>
+              <source srcset="./images/team/team-4-desktop.jpg 1x,
+                              ./images/team/team-4-desktop@2x.jpg  2x" 
+                      media="(min-width: 1200px)">
+            
+              <source srcset="./images/team/team-4-tablet.jpg 1x,
+                              ./images/team/team-4-tablet@2x.jpg  2x" 
+                      media="(min-width: 768px)">
+            
+              <source srcset="./images/team/team-4.jpg 1x,
+                              ./images/team/team-4@2x.jpg 2x" 
+                      media="(min-width: 320px)">
+            
+              <img src="./images/team/team-4.jpg" alt="дизайнер" width="270" height="260" class="img" />
+            
+            </picture>
+            
             <div class="card__subtitle">
               <h3 class="card__subtitle-name">Михаил Ермаков</h3>
               <p lang="en" class="card__subtitle-text">UI Designer</p>

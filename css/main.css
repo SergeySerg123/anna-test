@@ -753,6 +753,16 @@ address {
   letter-spacing: 0.03em;
 }
 
+.section__doing {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__doing {
+    display: block;
+  }
+}
+
 .card__doing {
   display: flex;
 }
