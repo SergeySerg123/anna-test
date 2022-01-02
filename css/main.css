@@ -509,10 +509,35 @@ address {
 }
 
 .checkbox-group__label a {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox-group__label a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
+.chckbox-group__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .chckbox-group__left {
+    display: block;
+    padding-top: 0px;
+  }
 }
 
 .checkbox-group__imput:checked + .checkbox-group__svg {
@@ -540,10 +565,21 @@ address {
 }
 
 .checkbox-group__text {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .checkbox-group__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    padding-right: 5px;
+  }
 }
 
 .form__button {
@@ -1163,9 +1199,29 @@ address {
   justify-content: space-between;
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .header-button__close {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  border-radius: 50%;
+  background-color: var(--header-text-color);
+  justify-content: center;
+  cursor: pointer;
+  transition: fill 250ms var(--timing-funcshion);
+}
+
+.header-button__close:focus, .header-button__close:hover {
+  fill: var(--acent-text-color);
 }
 
 .mob-menu__item:not(:last-child) {
@@ -1379,6 +1435,18 @@ address {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .card__border {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__border {
+    padding: 20px 24px;
+  }
 }
 
 .card__title-name {

@@ -109,6 +109,15 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+   @media screen and (min-width: 768px){
+     padding: 20px 15px;
+   }
+
+   
+   @media screen and (min-width: 1200px){
+     padding: 20px 24px;
+   }
 }
 
 .card__title-name {

@@ -7,6 +7,8 @@
   @include font($fw:700, $fs:20px, $lh:1.2, $ls:0.03em );
   text-align: center;
   color:var(--primary-text-color);
+
+  
 }
 
 .input-group{
@@ -82,12 +84,26 @@ color: var(--secondary-text-color);
 }
 
 .checkbox-group__label a{ 
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  @include font( $fs:14px, $lh:1.7, $ls:0.03em );
   color: #2196F3;
+
+  @media screen and (max-width: 1199px){
+      @include font( $fs:12px, $lh:1.16, $ls:0.03em );
+   }
 }
 
+.chckbox-group__left{
+   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 5px;
+
+  @media screen and (min-width: 1200px){
+   display: block;
+    padding-top: 0px;
+   }
+}
 .checkbox-group__imput:checked + .checkbox-group__svg{
   border: var(--acent-text-color);
   background-color: var(--acent-text-color);
@@ -113,9 +129,11 @@ color: var(--secondary-text-color);
 }
 
 .checkbox-group__text{
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
+@include font( $fs:14px, $lh:1.7, $ls:0.03em );
+  @media screen and (max-width: 1199px){
+      @include font( $fs:12px, $lh:1.16, $ls:0.03em );
+      padding-right: 5px;
+   }
 
 color: #757575;
 }

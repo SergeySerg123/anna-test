@@ -14,11 +14,37 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
 }
 
 .header-button__close{
-    display: block;
-    margin-left: auto;
+    // display: block;
+    // margin-left: auto;
+     display: flex;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  border-radius: 50%;
+  background-color: var(--header-text-color);
+
+  justify-content: center;
+  cursor: pointer;
+
+  transition: fill 250ms var(--timing-funcshion); 
+
+  &:focus,
+  &:hover{
+  fill: var(--acent-text-color);
+  }
    
 }
 
