@@ -23,6 +23,10 @@
   height: 580px;
   background-color: var(--header-text-color);
 
+   @media screen and (max-width: 1199px){
+      width: 450px;
+      height: 609px;
+   }
   position: absolute;
   top: 50%;
   left: 50%;

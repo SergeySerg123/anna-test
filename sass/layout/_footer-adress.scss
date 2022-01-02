@@ -1,3 +1,21 @@
+.footer__wrapper {
+  // margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px){
+      width: 50%;
+   }
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+
+  @include font($fw:700, $fs:26px, $lh:1.2, $ls:0.03em );
+ 
+}
+
 .adress__link {
   text-decoration: none;
   color: var(--header-text-color);
