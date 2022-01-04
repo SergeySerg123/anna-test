@@ -1,15 +1,15 @@
 .footer__box {
   // display: flex;
-  
-  margin-bottom: 60px;
-   @media screen and (min-width: 768px){
-      width: 50%;
-   }
 
-   @media screen and (min-width: 1200px){
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: auto;
     margin-bottom: 0px;
-   }
+  }
 }
 
 .foter__list {
@@ -23,7 +23,7 @@
   border-radius: 50%;
 
   & + .footer__item {
-  margin-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -40,7 +40,7 @@
 
   &:hover,
   &:focus {
-  background-color: var(--acent-text-color);
+    background-color: var(--acent-text-color);
   }
 }
 

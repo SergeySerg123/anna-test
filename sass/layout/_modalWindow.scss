@@ -10,11 +10,11 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms var(--timing-funcshion), visibility 250ms var(--timing-funcshion);
-   
+
   &.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 }
 
@@ -23,10 +23,10 @@
   height: 580px;
   background-color: var(--header-text-color);
 
-   @media screen and (max-width: 1199px){
-      width: 450px;
-      height: 609px;
-   }
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,7 +39,7 @@
   transition: transform 250ms var(--timing-funcshion);
 
   .backdrop.is-hidden & {
-  transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
@@ -58,16 +58,15 @@
   justify-content: center;
   cursor: pointer;
 
-  transition: fill 250ms var(--timing-funcshion); 
+  transition: fill 250ms var(--timing-funcshion);
 
   &:focus,
-  &:hover{
-  fill: var(--acent-text-color);
+  &:hover {
+    fill: var(--acent-text-color);
   }
 }
 
 .modal__icon {
- 
   height: 100%;
   color: var(--primary-text-color);
 }

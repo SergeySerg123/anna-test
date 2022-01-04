@@ -1,20 +1,18 @@
-.header{
-   @media screen and (max-width: 767px ) {
+.header {
+  @media screen and (max-width: 767px) {
     padding: 16px 0px;
   }
-  
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    @media screen and (min-width: 768px) {
-     justify-content: flex-start;
-    }
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
-
 
 .main-nav {
   display: none;
@@ -26,14 +24,14 @@
 
 .main-nav__list {
   &.main-nav__link.current {
-  color: var(--acent-text-color);
+    color: var(--acent-text-color);
   }
 }
 
-.header-button__open{
- @media screen and (min-width: 768px) {
+.header-button__open {
+  @media screen and (min-width: 768px) {
     display: none;
-  } 
+  }
 }
 
 .main-nav__item {
@@ -41,7 +39,7 @@
   position: relative;
 
   &:not(:last-child) {
-  margin-right: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -51,14 +49,14 @@
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  
+
   @include font();
 
   transition: color 250ms var(--timing-funcshion);
 
   &:hover,
   &:focus {
-  color: var(--acent-text-color);
+    color: var(--acent-text-color);
   }
 }
 
@@ -67,24 +65,23 @@
 }
 
 .main-nav__auht-list {
- display: none;
-@media screen and (min-width: 768px) {
+  display: none;
+  @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
   }
- @media screen and (min-width: 1200px) {
-     display: flex;   
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
-
 }
 
- .main-nav__auht-link{
+.main-nav__auht-link {
   display: flex;
-   @media screen and (min-width: 1200px) {
-   padding-top: 32px;
-   padding-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
-  
+
   align-items: center;
 
   color: var(--secondary-text-color);
@@ -93,21 +90,21 @@
 
   transition: color 250ms var(--timing-funcshion);
 
-   &:hover,
-   &:focus {
-  color: var(--acent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--acent-text-color);
   }
 }
 
-.main-nav__auht-item{
+.main-nav__auht-item {
   @media screen and (min-width: 768px) {
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 
-    @media screen and (min-width: 1200px) {
-    &:not(:last-child){
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
       margin-bottom: 0px;
       margin-right: 30px;
     }
@@ -119,7 +116,3 @@
   height: 20px;
   fill: currentColor;
 }
-
-
-
-

@@ -1,29 +1,29 @@
-.sub-group{
+.sub-group {
   // width: 570px;
   // margin-left: 94px;
   @media screen and (min-width: 1200px) {
     display: flex;
-     width: 570px;
-  margin-left: 94px;
+    width: 570px;
+    margin-left: 94px;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: block;
     width: auto;
     margin-left: 0px;
-   }
- 
+  }
+
   // display: flex;
 }
 
-.sub-group__input{
+.sub-group__input {
   width: 100%;
   margin: 0;
   padding-left: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
- 
-  color: #ffffff;  
-  border-radius: 4px ;
+
+  color: #ffffff;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer-background);
   margin-bottom: 12px;
@@ -32,14 +32,14 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  &:-webkit-autofill { 
-  -webkit-text-fill-color: #fff;
-  -webkit-background-clip: text;
-  background-clip: text;
+  &:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 
   &::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -47,19 +47,19 @@
   }
 }
 
-.sub-group__form{
-     @media screen and (min-width: 768px) {
-     width: 450px;
-     margin: 0 auto;
+.sub-group__form {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
   }
- 
-   @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1200px) {
     width: auto;
     display: flex;
   }
 }
-   
-.sub-group__button{
+
+.sub-group__button {
   position: relative;
   margin: 0 auto;
   width: 200px;
@@ -72,12 +72,12 @@
   border-radius: 4px;
   cursor: pointer;
 
-  @include font($fw:600,$fs:16px,$lh:1.8, $ls:0.06em );
+  @include font($fw: 600, $fs: 16px, $lh: 1.8, $ls: 0.06em);
   color: var(--background-bootun);
   background-color: var(--acent-text-color);
 }
 
-.sub-group__svg{
+.sub-group__svg {
   width: 24px;
   height: 24px;
   position: absolute;
