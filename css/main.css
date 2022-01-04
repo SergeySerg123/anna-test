@@ -96,7 +96,6 @@ address {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -156,6 +155,12 @@ address {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo.logo__footer {
+    margin-right: 0px;
+  }
+}
+
 .logo__web {
   color: var(--acent-text-color);
 }
@@ -201,9 +206,16 @@ address {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .section.footer__section {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .container.footer__conteiner {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -211,6 +223,12 @@ address {
   .footer__comb {
     display: flex;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__comb {
+    width: auto;
   }
 }
 
@@ -222,6 +240,12 @@ address {
   text-transform: uppercase;
   color: var(--background-bootun);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    padding-top: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -596,7 +620,6 @@ address {
 
 .main-title {
   box-sizing: border-box;
-  max-width: 480px;
   margin: 0 auto;
   background-color: var(--footer-background);
   padding-top: 118px;
@@ -1046,6 +1069,14 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    width: auto;
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -1056,6 +1087,10 @@ address {
   letter-spacing: 0.03em;
 }
 
+.adres {
+  margin-bottom: 9px;
+}
+
 .adress__link {
   text-decoration: none;
   color: var(--header-text-color);
@@ -1063,28 +1098,30 @@ address {
   display: inline-block;
 }
 
-.adress__link:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .footer__link {
   text-decoration: none;
   color: var(--header-text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   opacity: 0.6;
 }
 
 .footer__box {
-  flex-direction: column;
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__box {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    width: auto;
+    margin-bottom: 0px;
   }
 }
 
@@ -1124,6 +1161,22 @@ address {
   fill: var(--background-bootun);
 }
 
+@media screen and (min-width: 1200px) {
+  .sub-group {
+    display: flex;
+    width: 570px;
+    margin-left: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-group {
+    display: block;
+    width: auto;
+    margin-left: 0px;
+  }
+}
+
 .sub-group__input {
   width: 100%;
   margin: 0;
@@ -1149,6 +1202,27 @@ address {
 
 .sub-group__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-group__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sub-group__form {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-group__form {
+    width: auto;
+    display: flex;
+  }
 }
 
 .sub-group__button {
@@ -1180,7 +1254,6 @@ address {
 }
 
 .mob-menu {
-  position: absolute;
   position: fixed;
   z-index: 5;
   background-color: var(--header-text-color);
@@ -1224,10 +1297,7 @@ address {
   width: 40px;
   height: 40px;
   border: var(--header-text-color) solid 1px;
-  border-radius: 50%;
   background-color: var(--header-text-color);
-  justify-content: center;
-  cursor: pointer;
   transition: fill 250ms var(--timing-funcshion);
 }
 
@@ -1240,17 +1310,21 @@ address {
   height: 40px;
   border: var(--header-text-color) solid 1px;
   background-color: transparent;
-  border-color: var(--acent-text-color);
-  transition: fill 250ms var(--timing-funcshion);
+  transition: color 250ms var(--timing-funcshion);
 }
 
 .header-button__open:focus, .header-button__open:hover {
-  fill: var(--acent-text-color);
+  color: var(--acent-text-color);
 }
 
 .menu-svg {
   width: 100%;
   height: 100%;
+  transition: color 250ms var(--timing-funcshion);
+}
+
+.menu-svg:focus, .menu-svg:hover {
+  color: var(--acent-text-color);
 }
 
 .mob-menu__item:not(:last-child) {
@@ -1299,6 +1373,14 @@ address {
 
 .mob-menu__social-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.mob-menu__social-item:not(:last-child):after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  width: 1px;
+  margin-left: 10px;
 }
 
 .mob-menu__social-link {

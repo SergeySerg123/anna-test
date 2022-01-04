@@ -1,19 +1,23 @@
 .logo {
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
   }
 
-    @media screen and (min-width: 1200px) {
-      margin-right: 94px;   
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
   }
   color: var(--logo-text-color);
   font-family: 'Raleway', sans-serif;
-  @include font($fw:700, $fs:26px, $lh:1.2, $ls:0.03em );
+  @include font($fw: 700, $fs: 26px, $lh: 1.2, $ls: 0.03em);
 
   &.logo__footer {
-  display: block;
-  margin-bottom: 20px;
-  } 
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
+  }
 }
 
 .logo__web {

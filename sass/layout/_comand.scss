@@ -1,45 +1,44 @@
-.section{
+.section {
   &.color__section {
     background-color: var(--section-color);
   }
-} 
+}
 
 .card__body-comand {
- @media screen and (min-width: 768px){
-     display: flex;
-     flex-wrap: wrap;
-     margin-right: -30px;
-     margin-bottom: -30px;
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 
-    @media screen and (min-width: 1200px){
-     display: flex;
-     flex-wrap: wrap;
-     margin-right: -30px;
-   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .card__title {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  3px 0px 1px rgba(0, 0, 0, 0.12);
+    3px 0px 1px rgba(0, 0, 0, 0.12);
 
-   @media screen and (max-width:767px){
-      &:not(:last-child) {
-    margin-bottom: 30px;
-    }
-   }
-    @media screen and (min-width: 768px){
-     flex-basis: calc(100% / 2 - 30px);
-      margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
-   }
-   
-      @media screen and (min-width: 1200px){
-     flex-basis: calc(100% / 4 - 30px);
-     margin-right: 30px;
-     margin-bottom: 30px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .card__subtitle {
@@ -53,14 +52,14 @@
 }
 
 .card__subtitle-name {
-   @include font($fw:600,$fs:16px, $lh:1.18, $ls:0.03em ); 
+  @include font($fw: 600, $fs: 16px, $lh: 1.18, $ls: 0.03em);
   margin-bottom: 10px;
 }
 
 .card__subtitle-text {
   color: var(--secondary-text-color);
 
-  @include font($fs:16px, $lh:1.18, $ls:0.03em ); 
+  @include font($fs: 16px, $lh: 1.18, $ls: 0.03em);
 
   margin-bottom: 16px;
 }
@@ -75,7 +74,7 @@
   height: 44px;
 
   & + .card__subtitle-item {
-  margin-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -93,8 +92,8 @@
 
   &:hover,
   &:focus {
-  color: var(--header-text-color);
-  background-color: var(--acent-text-color);
+    color: var(--header-text-color);
+    background-color: var(--acent-text-color);
   }
 }
 
@@ -103,5 +102,3 @@
   height: 20px;
   fill: currentColor;
 }
-
-

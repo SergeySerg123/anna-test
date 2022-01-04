@@ -1,14 +1,21 @@
 .sub-group{
   // width: 570px;
   // margin-left: 94px;
-
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+     width: 570px;
+  margin-left: 94px;
+  }
+  @media screen and (min-width: 1200px){
+    display: block;
+    width: auto;
+    margin-left: 0px;
+   }
  
   // display: flex;
 }
 
 .sub-group__input{
-  // width: 358px;
   width: 100%;
   margin: 0;
   padding-left: 15px;
@@ -19,7 +26,6 @@
   border-radius: 4px ;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer-background);
-  // margin-right: 12px;
   margin-bottom: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-size: 14px;
@@ -35,8 +41,24 @@
   &::placeholder {
   color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
+.sub-group__form{
+     @media screen and (min-width: 768px) {
+     width: 450px;
+     margin: 0 auto;
+  }
+ 
+   @media screen and (min-width: 1200px) {
+    width: auto;
+    display: flex;
+  }
+}
+   
 .sub-group__button{
   position: relative;
   margin: 0 auto;

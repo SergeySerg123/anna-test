@@ -1,9 +1,14 @@
 .footer__wrapper {
-  // margin-right: 70px;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px){
-      width: 50%;
-   }
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
 }
 
 .logo-footer {
@@ -12,8 +17,11 @@
 
   font-family: 'Raleway', sans-serif;
 
-  @include font($fw:700, $fs:26px, $lh:1.2, $ls:0.03em );
- 
+  @include font($fw: 700, $fs: 26px, $lh: 1.2, $ls: 0.03em);
+}
+
+.adres {
+  margin-bottom: 9px;
 }
 
 .adress__link {
@@ -21,16 +29,12 @@
   color: var(--header-text-color);
   width: 233px;
   display: inline-block;
-
-  &:not(:last-child) {
-  margin-bottom: 9px;
-  }
 }
 
 .footer__link {
   text-decoration: none;
   color: var(--header-text-color);
 
-  @include font($lh:1.14,); 
+  @include font($fw: 400, $fs: 14px, $lh: 1.17, $ls: 0.03em);
   opacity: 0.6;
 }

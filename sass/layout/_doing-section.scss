@@ -1,7 +1,7 @@
-.section__doing{
+.section__doing {
   display: none;
   @media screen and (min-width: 1200px) {
-     display: block;   
+    display: block;
   }
 }
 
@@ -14,7 +14,7 @@
   position: relative;
 
   &:not(:last-child) {
-  margin-right: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -28,8 +28,8 @@
   bottom: 0;
 }
 
-.card__text{
-  @include font( $ls:0.03em ); 
+.card__text {
+  @include font($ls: 0.03em);
   text-align: center;
   text-transform: uppercase;
   color: var(--header-text-color);
@@ -40,4 +40,3 @@
   bottom: 27px;
   left: 83px;
 }
-
