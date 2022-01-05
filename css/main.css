@@ -297,9 +297,6 @@ body.lock {
   .heder__burger:hover {
     cursor: pointer;
   }
-  .heder__burger:hover::after, .heder__burger:hover::before {
-    background-color: var(--acent-text-color);
-  }
   .heder__burger:before, .heder__burger:after {
     content: "";
     background-color: var(--logo-text-color);
@@ -337,9 +334,6 @@ body.lock {
     height: 3px;
     left: 0;
     top: 10px;
-  }
-  .burger:hover {
-    background-color: var(--acent-text-color);
   }
   .burger.is-hidden {
     transform: scale(0);

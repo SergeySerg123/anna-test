@@ -38,10 +38,6 @@
       cursor: pointer;
     }
     
-    &:hover::after,
-    &:hover::before{
-      background-color: var(--acent-text-color);
-    }
 
     &:before,
     &:after{
@@ -88,12 +84,7 @@
       height: 3px;
        left: 0;
       top: 10px;
-
-       &:hover{
-      background-color: var(--acent-text-color);
       
-    }
-
         &.is-hidden{
      transform: scale(0);
     }
