@@ -91,6 +91,10 @@ address {
   transition: color 250ms var(--timing-funcshion);
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -250,16 +254,16 @@ address {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    padding: 16px 0px;
-  }
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding: 16px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -282,9 +286,63 @@ address {
   color: var(--acent-text-color);
 }
 
-@media screen and (min-width: 768px) {
-  .header-button__open {
-    display: none;
+@media screen and (max-width: 767px) {
+  .heder__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    z-index: 99;
+  }
+  .heder__burger:hover {
+    cursor: pointer;
+  }
+  .heder__burger:hover::after, .heder__burger:hover::before {
+    background-color: var(--acent-text-color);
+  }
+  .heder__burger:before, .heder__burger:after {
+    content: "";
+    background-color: var(--logo-text-color);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: 0.5s transform;
+  }
+  .heder__burger:before {
+    top: 0;
+  }
+  .heder__burger:after {
+    bottom: 0;
+  }
+  .heder__burger.is-hidden {
+    position: fixed;
+    right: 15px;
+  }
+  .heder__burger.is-hidden:before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  .heder__burger.is-hidden:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger {
+    background-color: var(--logo-text-color);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 10px;
+  }
+  .burger:hover {
+    background-color: var(--acent-text-color);
+  }
+  .burger.is-hidden {
+    transform: scale(0);
   }
 }
 
@@ -1257,22 +1315,6 @@ address {
   color: var(--acent-text-color);
 }
 
-.header-button__close {
-  display: flex;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border: var(--header-text-color) solid 1px;
-  background-color: var(--header-text-color);
-  transition: fill 250ms var(--timing-funcshion);
-}
-
-.header-button__close:focus, .header-button__close:hover {
-  fill: var(--acent-text-color);
-}
-
 .header-button__open {
   width: 40px;
   height: 40px;
@@ -1282,16 +1324,6 @@ address {
 }
 
 .header-button__open:focus, .header-button__open:hover {
-  color: var(--acent-text-color);
-}
-
-.menu-svg {
-  width: 100%;
-  height: 100%;
-  transition: color 250ms var(--timing-funcshion);
-}
-
-.menu-svg:focus, .menu-svg:hover {
   color: var(--acent-text-color);
 }
 

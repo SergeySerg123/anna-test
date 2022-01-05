@@ -1,14 +1,12 @@
-.header {
-  @media screen and (max-width: 767px) {
-    padding: 16px 0px;
-  }
-}
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+   @media screen and (max-width: 767px) {
+    padding: 16px 15px;
+  }
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
@@ -28,11 +26,85 @@
   }
 }
 
-.header-button__open {
-  @media screen and (min-width: 768px) {
-    display: none;
+.heder__burger{
+  @media screen and (max-width: 767px) {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    z-index: 99;
+
+    &:hover {
+      cursor: pointer;
+    }
+    
+    &:hover::after,
+    &:hover::before{
+      background-color: var(--acent-text-color);
+    }
+
+    &:before,
+    &:after{
+      content: "";
+      background-color: var( --logo-text-color);
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: 0.5s transform;
+    }
+
+    &:before{
+      top: 0;
+    }
+
+    &:after{
+      bottom: 0;
+    }
+
+    &.is-hidden{
+    position: fixed;
+    right: 15px;
+  }
+
+    &.is-hidden:before{
+
+     transform: rotate(45deg);
+     top:11px;
+    }
+
+     &.is-hidden:after{
+     transform: rotate(-45deg);
+     bottom: 9px;
+    }
   }
 }
+
+.burger{
+   @media screen and (max-width: 767px){
+       background-color: var( --logo-text-color);
+      position: absolute;
+      width: 100%;
+      height: 3px;
+       left: 0;
+      top: 10px;
+
+       &:hover{
+      background-color: var(--acent-text-color);
+      
+    }
+
+        &.is-hidden{
+     transform: scale(0);
+    }
+    }
+}
+
+// .header-button__open {
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
 
 .main-nav__item {
   display: inline-block;
