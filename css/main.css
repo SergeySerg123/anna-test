@@ -1372,16 +1372,24 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
+.button__comb {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .button__comb {
+    margin-bottom: 30px;
+  }
+}
+
 .button {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .button {
-    margin-bottom: 30px;
     justify-content: center;
   }
 }
@@ -1415,6 +1423,9 @@ address {
 
 .button__wrapper:not(:last-child) {
   margin-right: 8px;
+}
+
+.button__wrapper:not(:last-child):nth-child(-n+3) {
   margin-bottom: 15px;
 }
 
