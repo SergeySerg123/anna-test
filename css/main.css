@@ -223,12 +223,14 @@ address {
   .footer__comb {
     display: flex;
     width: 100%;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__comb {
     width: auto;
+    margin-bottom: 0px;
   }
 }
 
@@ -961,8 +963,6 @@ address {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-bottom: -20px;
 }
 
 @media screen and (min-width: 420px) {
@@ -970,6 +970,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -979,6 +980,7 @@ address {
   display: flex;
   flex-basis: calc((100% - 2 * 30px) / 2);
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 420px) {
@@ -987,6 +989,7 @@ address {
     height: 92px;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -999,6 +1002,7 @@ address {
 @media screen and (min-width: 1200px) {
   .breadcrumb__item {
     flex-basis: calc((100% - 6 * 30px) / 6);
+    margin-top: 0px;
   }
 }
 
@@ -1030,13 +1034,13 @@ address {
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     width: 50%;
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     width: auto;
-    margin-bottom: 0px;
     margin-right: 70px;
   }
 }
@@ -1079,13 +1083,13 @@ address {
 @media screen and (min-width: 768px) {
   .footer__box {
     width: 50%;
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__box {
     width: auto;
-    margin-bottom: 0px;
   }
 }
 
