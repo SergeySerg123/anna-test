@@ -292,7 +292,7 @@ body.lock {
     position: relative;
     width: 30px;
     height: 24px;
-    z-index: 99;
+    z-index: 6;
   }
   .heder__burger:hover {
     cursor: pointer;
@@ -440,7 +440,7 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 7;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -454,8 +454,8 @@ body.lock {
 }
 
 .modal {
-  width: 528px;
-  height: 580px;
+  width: 328px;
+  height: 609px;
   background-color: var(--header-text-color);
   position: absolute;
   top: 50%;
@@ -467,10 +467,17 @@ body.lock {
   transition: transform 250ms var(--timing-funcshion);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 420px) {
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 580px;
   }
 }
 
